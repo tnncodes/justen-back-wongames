@@ -255,5 +255,4 @@ export {
   P,
   Separator,
   SocialLinkWrapper,
-  Wave,
 };
