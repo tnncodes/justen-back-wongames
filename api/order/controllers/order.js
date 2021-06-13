@@ -34,6 +34,12 @@
       return acc + game.price;
     }, 0);
 
+    if (total === 0) {
+      return {
+        freeGames: true,
+      };
+    }
+
     return { total_in_cents: total * 100, games };
   },
 };
