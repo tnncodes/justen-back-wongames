@@ -51,4 +51,19 @@ module.exports = {
       };
     }
   },
+
+  create: async (ctx) => {
+    // pegar as informacoes do frontend
+    const { cart, paymentIntentId, paymentMethod } = ctx.request.body;
+
+    // pegar o usuario
+    // pegar os jogos
+    // pegar o total (saber se eh free ou nao)
+    // pegar o paymentIntentId
+    // pegar as informacoes do pagamento (paymentMethod)
+    // salvar no banco
+    // enviar um email da compra para o usuario
+
+    return { cart, paymentIntentId, paymentMethod };
+  }
 };
