@@ -10519,10 +10519,10 @@ strapi-plugin-content-type-builder@3.6.2:
     strapi-utils "3.6.2"
     yup "^0.27.0"
 
-strapi-plugin-email-designer@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/strapi-plugin-email-designer/-/strapi-plugin-email-designer-0.4.1.tgz#0d15977997f03664ceaa00082fe6f4c6f5732394"
-  integrity sha512-nvbJf6Iv8UihP+vyGIrFTft54eIb74a/kglgHm/bLfPUL0pBkqr+9hZqA0vvrGe3Yv0rCOPgzh3YBm95zXZj+Q==
+strapi-plugin-email-designer@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-email-designer/-/strapi-plugin-email-designer-1.0.1.tgz#5fb1392c38bad2e46ee8fdbf4419d025b1eaee76"
+  integrity sha512-Y5y6opWc7zJ1iBak6iWzCcjQcrPzrLQh21iMCHWlyAUOCKRACXLGiKa2QLUnASv50MJftsuHblSahDmHMlOGJQ==
   dependencies:
     decode-html "^2.0.0"
     html-to-text "^7.1.1"

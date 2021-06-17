@@ -73,12 +73,12 @@ module.exports = {
     // precisa pegar do frontend os valores do paymentMethod
     // e recuperar por aqui
     let paymentInfo;
-    if(total_in_cents !== 0) {
+    if (total_in_cents !== 0) {
       try {
-        paymentInfo = await stripe.paymentMethods.retrieve(paymentMethod)
+        paymentInfo = await stripe.paymentMethods.retrieve(paymentMethod);
       } catch (err) {
-        ctx.response.status = 402
-        return { error: err.message }
+        ctx.response.status = 402;
+        return { error: err.message };
       }
     }
 
@@ -95,12 +95,14 @@ module.exports = {
     const entity = await strapi.services.order.create(entry);
 
     // enviar um email da compra para o usuário
-    await strapi.plugins.email.services.email.sendTemplatedEmail(
+    await strapi.plugins["email-designer"].services.email.sendTemplatedEmail(
       {
         to: userInfo.email,
         from: "no-reply@wongames.com",
       },
-      orderTemplate,
+      {
+        templateId: 1,
+      },
       {
         user: userInfo,
         payment: {
